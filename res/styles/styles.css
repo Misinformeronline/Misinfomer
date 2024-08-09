@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gupter:wght@400;500;700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -188,6 +189,7 @@ footer nav a:hover {
 }
 
 .full-article h1 {
+    font-family: "Urbanist", sans-serif;
     font-size: 28px;
     margin-bottom: 10px;
     color: #333;
@@ -197,6 +199,18 @@ footer nav a:hover {
     font-size: 14px;
     color: #777;
     margin-bottom: 20px;
+}
+
+.full-article h2{
+    padding: 10px;
+    font-family: "Bebas Neue", sans-serif;
+
+}
+.full-article p {
+    padding: 16px;
+    font-family: "Gupter", serif;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 .related-articles {
@@ -249,3 +263,4 @@ footer nav a:hover {
     font-size: 14px;
     color: #555;
 }
+
