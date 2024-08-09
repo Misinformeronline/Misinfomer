@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #a5a5a5;
 }
 
 header {
@@ -225,4 +225,3 @@ footer nav a:hover {
     font-size: 14px;
     color: #555;
 }
-
