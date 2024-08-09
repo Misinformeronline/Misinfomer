@@ -70,14 +70,19 @@ nav ul li a {
     box-sizing: border-box;
 }
 
-main {
+/* Main Layout */
+.container {
     display: flex;
     margin: 20px;
 }
 
-.featured-article {
+/* Main Content */
+main {
     flex: 3;
     margin-right: 20px;
+}
+
+.featured-article {
     background-color: rgb(219, 219, 219);
     padding: 20px;
     border-radius: 5px;
@@ -92,7 +97,7 @@ main {
 }
 
 .latest-news {
-    flex: 2;
+    margin-top: 20px;
     background-color: rgb(219, 219, 219);
     padding: 20px;
     border-radius: 5px;
@@ -108,9 +113,11 @@ main {
     height: auto;
 }
 
+/* Sidebar */
 aside {
     width: 300px;
     margin-left: 20px;
+    flex-shrink: 0;
 }
 
 aside section {
@@ -126,6 +133,7 @@ aside img {
     height: auto;
 }
 
+/* Footer */
 footer {
     background-color: #333;
     color: white;
@@ -142,6 +150,7 @@ footer nav a {
 footer nav a:hover {
     text-decoration: underline;
 }
+
 /* Article Page Styles */
 .article-page {
     display: flex;
