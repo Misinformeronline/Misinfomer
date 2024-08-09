@@ -1,2 +1,2 @@
 # Misinfomer
-Website
+https://misinformer.online/
