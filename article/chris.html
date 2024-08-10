@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Page - MIS Informer</title>
+    <link rel="stylesheet" href="../res/styles/styles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="head">
+        <div class="logo">
+            <div style="font-size: 40px;">The MIS Informer</div>
+            Media, Information, Security
+        </div>
+        <div class="search-login flex-container">
+            <label>
+                <input type="text" placeholder="Search...">
+            </label>
+            <button>Search</button>
+            <button>Login/Signup</button>
+        </div>
+    </header>
+
+    <!-- Breaking News Ticker -->
+    <div class="breaking-news">
+        <iframe src="./ticker.html"
+            onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+    </div>
+    <!-- Navigation Menu -->
+    <nav class="topnav" id="myTopnav">
+        <a href="../index.html">Home</a>
+        <a href="../world.html">World</a>
+        <a href="../Politics.html">Politics</a>
+        <a href="../buisness.html">Business</a>
+        <a href="../technology.html">Technology</a>
+        <a href="../science.html">Science</a>
+        <a href="#">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="container grid-container">
+        <main>
+            <section class="content featured-article">
+                <h1>Interview with Chris Bongo: On the Run from the CIA</h1>
+                <p><strong>Interviewer:</strong> Good afternoon, Chris. Thanks for sitting down with me. I know you've had quite an intense few years. Let's start with the big one—why do you believe you're on the run from the CIA?</p>
+
+                <p><strong>Chris Bongo:</strong> The CIA has been after me ever since I made the mistake of sharing my ideas. I’m not just talking about small stuff here—I've been working on technology that could change the world. When you’re dealing with things like nuclear reactors in your yard and engines that run on water, the government gets nervous. They don’t want people like me changing the status quo.</p>
+
+                <p><strong>Interviewer:</strong> You mentioned the nuclear reactor—what made you decide to build one in your yard?</p>
+
+                <p><strong>Chris Bongo:</strong> I was trying to create a sustainable power source. You see, the energy crisis is a manufactured problem. The powers that be don’t want regular people to have access to free energy. I figured if I could make a small-scale nuclear reactor in my yard, it would prove that we don’t need these massive, dangerous power plants. I almost had it working too, but then the CIA started sniffing around.</p>
+
+                <p><strong>Interviewer:</strong> That’s quite a claim. Can you explain how you caused the collapse of a small African nation?</p>
+
+                <p><strong>Chris Bongo:</strong> That was never my intention. I was trying to help. I provided them with the plans for my engine that runs on water—no fossil fuels, no emissions, just clean energy. But it turns out the government there had ties to the oil industry. They sabotaged my project, and the resulting political instability led to a complete collapse. The CIA tried to pin it all on me, saying I was some kind of rogue operative. It was all part of their plan to discredit me.</p>
+
+                <p><strong>Interviewer:</strong> So, you believe the CIA has been targeting you because of your inventions. But what about the incident where you fell out of a window? You’ve claimed that a CIA agent pushed you.</p>
+
+                <p><strong>Chris Bongo:</strong> I know it sounds crazy, but I felt it. I was in my apartment, minding my own business, when I noticed someone watching me. Next thing I know, I’m being pushed out the window. It was a professional hit, no doubt about it. They didn’t expect me to survive. But I did, and that’s why I’m still here talking to you.</p>
+
+                <p><strong>Interviewer:</strong> That’s an incredible story, Chris. How do you cope with this constant feeling of being pursued?</p>
+
+                <p><strong>Chris Bongo:</strong> It’s not easy. I’m always looking over my shoulder, always moving. I can’t stay in one place for too long. But I’m not going to let them stop me. The world needs to know the truth, and I’m going to make sure they hear it.</p>
+
+                <p><strong>Interviewer:</strong> Are you working on anything new now?</p>
+
+                <p><strong>Chris Bongo:</strong> Always. They can’t stop me from innovating. I’m working on a new propulsion system that could make space travel accessible to everyone. But I can’t say much more—don’t want to give the CIA any more reasons to come after me.</p>
+
+                <p><strong>Interviewer:</strong> Chris, you’ve had an extraordinary life, and I’m sure our readers will be fascinated by your story. Thank you for your time and stay safe out there.</p>
+
+                <p><strong>Chris Bongo:</strong> Thanks. I will. But remember, the truth is out there—if you’re willing to look for it.</p>
+            </section>
+        </main>
+
+        <aside>
+            <section class="popular-articles">
+                <h2>Popular Articles</h2>
+                <article>
+                    <h3>10 reasons Taylor Swift is a terrible musician</h3>
+                </article>
+                <article>
+                    <h3>The famous/infamous political figure: Soap</h3>
+                </article>
+                <article>
+                    <h3>The biggest piece of evidence that the moon landing was real</h3>
+                </article>
+            </section>
+
+            <section class="social-media">
+                <h2>Follow Us</h2>
+                <button class="button"><a href="#">Facebook</a></button>
+                <button class="button"><a href="#">Twitter</a></button>
+                <button class="button"><a href="#">Truth Social</a></button>
+            </section>
+
+            <section class="donate">
+                <h2>Donate to Us</h2>
+                <button class="button"><a href="donate.html">LTC address</a></button>
+            </section>
+
+            <section class="advertisement">
+                <h2>Advertisement</h2>
+                <img src="../res/img/ad.png" alt="Ad Banner">
+            </section>
+        </aside>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 MIS Informer. All rights reserved.</p>
+        <p>Hosting Provided By Yuki-42. Powered by Peach Ice Tea</p>
+        <nav>
+            <a href="../about.html">About Us</a>
+            <a href="../pp.html">Privacy Policy</a>
+            <a href="../tos.html">Terms of Service</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </footer>
+    <script src="./res/javascript/script.js"></script>
+</body>
+
+</html>
