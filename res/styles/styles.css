@@ -121,6 +121,14 @@ footer {grid-area: footer}
         gap: 10px;
     }
 }
+.flex-article{
+    display: flex;
+    padding: 25px;
+    flex-wrap: wrap;
+}
+.flex-text{
+    padding:25px;
+}
 
 /* Main Layout */
 
