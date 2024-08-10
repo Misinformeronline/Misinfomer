@@ -4,143 +4,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article Page - MIS Informer</title>
+    <title>The Hidden Dangers of Spinach - MIS Informer</title>
     <link rel="stylesheet" href="../res/styles/styles.css">
 </head>
 
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="logo">
-            <div style="font-size: 40px;">The MIS Informer</div>
-            Media, Information, Security
-        </div>
-        <div class="search-login">
-            <label>
-                <input type="text" placeholder="Search...">
-            </label>
-            <button>Search</button>
-            <button>Login/Signup</button>
-        </div>
-    </header>
-    <div class="breaking-news">
-        <marquee>
-            Apple's new microwave charging leaked
-            | The mysterious story behind the man: Soap
-            | TAFE class causes building collapse
-            | Kevin Pemmem takes down Lithuania's internet
-            | High school student Luke O'Taliban found to be active KKK member
-            | Chris Bongo causes collapse of small African nation
-            | 15-car pileup caused by vision-impaired driver
-            | Chris Bongo tries to make nuclear power reactor in his shed
-            | Trains delayed after government-controlled birds block tracks
-            | Gap teen plays Crossy Road IRL
-            | Death of 3,692 people after bombing of Sopian protest
-            | Chris Bongo alleging that the CIA tried to kill him
-            | The International Space Station has blown a seal and water starts to fill the cabin
-            | Astronomers find second sun
-            | Roger Hammond catches person hacking into the mainframe
-        </marquee>
+<!-- Header Section -->
+<header>
+    <div class="logo">
+        <div style="font-size: 40px;">The MIS Informer</div>
+        Media, Information, Security
     </div>
-    <!-- Navigation Menu -->
-    <nav>
+    <div class="search-login">
+        <label>
+            <input type="text" placeholder="Search...">
+        </label>
+        <button>Search</button>
+        <button>Login/Signup</button>
+    </div>
+</header>
+
+<!-- Breaking News Section -->
+<div class="breaking-news">
+    <marquee>
+        Apple's new microwave charging leaked
+        | The mysterious story behind the man: Soap
+        | TAFE class causes building collapse
+        | Kevin Pemmem takes down Lithuania's internet
+        | High school student Luke O'Taliban found to be active KKK member
+        | Chris Bongo causes collapse of small African nation
+        | 15-car pileup caused by vision-impaired driver
+        | Chris Bongo tries to make nuclear power reactor in his shed
+        | Trains delayed after government-controlled birds block tracks
+        | Gap teen plays Crossy Road IRL
+        | Death of 3,692 people after bombing of Sopian protest
+        | Chris Bongo alleging that the CIA tried to kill him
+        | The International Space Station has blown a seal and water starts to fill the cabin
+        | Astronomers find second sun
+        | Roger Hammond catches person hacking into the mainframe
+    </marquee>
+</div>
+
+<!-- Navigation Menu -->
+<nav class="topnav" id="myTopnav">
+    <a href="./index.html">Home</a>
+    <a href="#">World</a>
+    <a href="#">Politics</a>
+    <a href="#">Business</a>
+    <a href="#">Technology</a>
+    <a href="#">Science</a>
+    <a href="#">Contact Us</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+</nav>
+
+<!-- Article Content Section -->
+<main class="article-page">
+    <article class="full-article">
+        <h1>The Hidden Dangers of Spinach</h1>
+        <p class="author-info">By <strong>K Smith</strong> | Published on August 9, 2024</p>
+        <img src="article-image.jpg" alt="Article Image">
+        <p>A recent study conducted by researchers at Bingham University has revealed surprising and potentially
+            concerning findings about the effects of high iron content in spinach. The study focused on adults aged
+            28-35 and included a sample size of 200 heavy spinach eaters, 200 non-spinach eaters, and a control
+            group of 50 individuals.</p>
+        <p>The researchers aimed to understand the impact of high dietary iron, specifically from spinach, on
+            overall health. Spinach has long been praised for its high iron content, making it a popular choice for
+            those looking to boost their iron levels. However, this new study suggests that there might be a darker
+            side to this nutrient-rich green.</p>
+        <p>Participants in the study who consumed large amounts of spinach showed elevated levels of iron in their
+            blood, which the researchers initially considered a positive sign. However, further analysis revealed
+            that these elevated iron levels were associated with a range of negative health outcomes. Some of the
+            most concerning findings included:</p>
+        <p><strong>1. Increased Oxidative Stress:</strong> High iron levels can lead to the production of free
+            radicals, which cause oxidative stress in the body. This stress can damage cells, proteins, and DNA,
+            potentially leading to chronic diseases such as cancer and heart disease.</p>
+        <p><strong>2. Impaired Immune Function:</strong> The study found that participants with high iron intake
+            from spinach had weakened immune responses. This was particularly evident in the heavy spinach eaters,
+            who showed a higher incidence of infections and slower recovery times compared to the control group.</p>
+        <p><strong>3. Potential for Iron Overload:</strong> The research suggested that excessive consumption of
+            spinach could contribute to iron overload, a condition known as hemochromatosis. This condition can
+            cause iron to accumulate in vital organs like the liver, heart, and pancreas, leading to serious health
+            issues.</p>
+        <p><strong>4. Altered Gut Microbiota:</strong> The study also found that the gut microbiota of heavy spinach
+            eaters was significantly different from that of non-eaters. The researchers hypothesized that the high
+            iron content in spinach might alter the balance of bacteria in the gut, potentially leading to digestive
+            problems and other health concerns.</p>
+        <p>These findings challenge the conventional wisdom that spinach is an unqualified superfood. While it
+            remains a rich source of vitamins and minerals, including iron, the study suggests that moderation is
+            key. The researchers at Bingham University emphasized the importance of a balanced diet and warned
+            against the excessive consumption of any single nutrient, even one as seemingly beneficial as iron from
+            spinach.</p>
+        <p>The study's lead author, Dr. Emily Harrison, noted that while the results are significant, further
+            research is needed to fully understand the long-term effects of high dietary iron on overall health. In
+            the meantime, individuals who consume large amounts of spinach may want to consider diversifying their
+            sources of iron and consulting with a healthcare professional if they have concerns about their iron
+            intake.</p>
+    </article>
+
+    <!-- Related Articles Section -->
+    <section class="related-articles">
+        <h2>Related Articles</h2>
         <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="#">World</a></li>
-            <li><a href="#">Politics</a></li>
-            <li><a href="#">Business</a></li>
-            <li><a href="#">Technology</a></li>
-            <li><a href="#">Science</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li>
+                <a href="#">
+                    <img src="related1.jpg" alt="Related Article 1 Thumbnail">
+                    <h3>Can You Get Too Much of a Good Thing? The Iron Debate</h3>
+                    <p>A closer look at how excessive iron intake can impact your health.</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="related2.jpg" alt="Related Article 2 Thumbnail">
+                    <h3>Spinach and Superfoods: Separating Fact from Fiction</h3>
+                    <p>Exploring the myths and realities behind popular superfoods.</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="related3.jpg" alt="Related Article 3 Thumbnail">
+                    <h3>The Pros and Cons of a High-Iron Diet</h3>
+                    <p>Understanding the benefits and potential risks of consuming iron-rich foods.</p>
+                </a>
+            </li>
         </ul>
+    </section>
+</main>
+
+<!-- Footer Section -->
+<footer>
+    <p>© 2024 MIS Informer. All rights reserved.</p>
+    <p>Hosting Provided By Yuki-42. Powered by Peach Ice Tea</p>
+    <nav>
+        <a href="about.html">About Us</a>
+        <a href="pp.html">Privacy Policy</a>
+        <a href="tos.html">Terms of Service</a>
+        <a href="#">Contact Us</a>
     </nav>
+</footer>
 
-    <!-- Article Content Section -->
-    <main class="article-page">
-        <article class="full-article">
-            <h1>The Hidden Dangers of Spinach</h1>
-            <p class="author-info">By <strong>K Smith</strong> | Published on August 9, 2024</p>
-            <img src="article-image.jpg" alt="Article Image">
-            <p>A recent study conducted by researchers at Bingham University has revealed surprising and potentially
-                concerning findings about the effects of high iron content in spinach. The study focused on adults aged
-                28-35 and included a sample size of 200 heavy spinach eaters, 200 non-spinach eaters, and a control
-                group of 50 individuals.</p>
-            <p>The researchers aimed to understand the impact of high dietary iron, specifically from spinach, on
-                overall health. Spinach has long been praised for its high iron content, making it a popular choice for
-                those looking to boost their iron levels. However, this new study suggests that there might be a darker
-                side to this nutrient-rich green.</p>
-            <p>Participants in the study who consumed large amounts of spinach showed elevated levels of iron in their
-                blood, which the researchers initially considered a positive sign. However, further analysis revealed
-                that these elevated iron levels were associated with a range of negative health outcomes. Some of the
-                most concerning findings included:</p>
-            <p><strong>1. Increased Oxidative Stress:</strong> High iron levels can lead to the production of free
-                radicals, which cause oxidative stress in the body. This stress can damage cells, proteins, and DNA,
-                potentially leading to chronic diseases such as cancer and heart disease.</p>
-            <p><strong>2. Impaired Immune Function:</strong> The study found that participants with high iron intake
-                from spinach had weakened immune responses. This was particularly evident in the heavy spinach eaters,
-                who showed a higher incidence of infections and slower recovery times compared to the control group.</p>
-            <p><strong>3. Potential for Iron Overload:</strong> The research suggested that excessive consumption of
-                spinach could contribute to iron overload, a condition known as hemochromatosis. This condition can
-                cause iron to accumulate in vital organs like the liver, heart, and pancreas, leading to serious health
-                issues.</p>
-            <p><strong>4. Altered Gut Microbiota:</strong> The study also found that the gut microbiota of heavy spinach
-                eaters was significantly different from that of non-eaters. The researchers hypothesized that the high
-                iron content in spinach might alter the balance of bacteria in the gut, potentially leading to digestive
-                problems and other health concerns.</p>
-            <p>These findings challenge the conventional wisdom that spinach is an unqualified superfood. While it
-                remains a rich source of vitamins and minerals, including iron, the study suggests that moderation is
-                key. The researchers at Bingham University emphasized the importance of a balanced diet and warned
-                against the excessive consumption of any single nutrient, even one as seemingly beneficial as iron from
-                spinach.</p>
-            <p>The study's lead author, Dr. Emily Harrison, noted that while the results are significant, further
-                research is needed to fully understand the long-term effects of high dietary iron on overall health. In
-                the meantime, individuals who consume large amounts of spinach may want to consider diversifying their
-                sources of iron and consulting with a healthcare professional if they have concerns about their iron
-                intake.</p>
-        </article>
-
-        <!-- Related Articles Section -->
-        <section class="related-articles">
-            <h2>Related Articles</h2>
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="related1.jpg" alt="Related Article 1 Thumbnail">
-                        <h3>Related Article 1 Title</h3>
-                        <p>Short description of related article 1.</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="related2.jpg" alt="Related Article 2 Thumbnail">
-                        <h3>Related Article 2 Title</h3>
-                        <p>Short description of related article 2.</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="related3.jpg" alt="Related Article 3 Thumbnail">
-                        <h3>Related Article 3 Title</h3>
-                        <p>Short description of related article 3.</p>
-                    </a>
-                </li>
-            </ul>
-        </section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>© 2024 MIS Informer. All rights reserved.</p>
-        <p>Hosting Provided By Yuki-42. Powered by Peach Ice Tea</p>
-        <nav>
-            <a href="about.html">About Us</a>
-            <a href="pp.html">Privacy Policy</a>
-            <a href="tos.html">Terms of Service</a>
-            <a href="#">Contact Us</a>
-        </nav>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="../res/javascript/script.js"></script>
 </body>
 
 </html>
