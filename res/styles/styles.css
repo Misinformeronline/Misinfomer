@@ -121,6 +121,9 @@ footer {grid-area: footer}
         gap: 10px;
     }
 }
+.icon{
+    width: 25px;
+}
 .flex-article{
     display: flex;
     padding: 25px;
@@ -246,7 +249,7 @@ footer nav a:hover {
 }
 
 .full-article img {
-    width: 100%;
+
     height: auto;
     margin: 20px 0;
     border-radius: 5px;
@@ -278,7 +281,10 @@ footer nav a:hover {
     font-weight: 400;
     font-size: 20px;
 }
+.article-image{
+    width: 35%;
 
+}
 
 .related-articles {
     background-color: rgb(219, 219, 219);
