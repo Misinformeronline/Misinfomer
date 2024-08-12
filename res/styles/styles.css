@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gupter:wght@400;500;700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-/* General Styles */
 
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -25,51 +25,44 @@ header .logo {
 header .search-login {
     display: flex;
     align-items: center;
-    gap: 10px; /* Adds space between the search and login items */
+    gap: 10px;
 }
 
-header input[type="text"] {
+header input[type="text"], header button {
     padding: 5px;
-    margin-right: 10px;
 }
 
 header button {
-    padding: 5px 10px;
     background-color: #444;
     color: white;
     border: none;
     cursor: pointer;
 }
 
-
 .button {
     background-color: #a5a5a5;
     color: white;
     padding: 15px 32px;
     text-align: center;
-    display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     border-radius: 5px;
-  }
+}
+
 /* Breaking News Ticker */
 .breaking-news {
     width: 100%;
     background-color: #e74c3c;
     color: white;
-    padding: 10px 0;
+    padding: 5px 0;
     text-align: center;
     box-sizing: border-box;
 }
 
 .breaking-news iframe {
     width: 100%;
-    height: 25px; /* Adjust the height as needed */
+    height: 10px;
     border: none;
-    padding: 0;
-    margin: 0;
-    display: block;
-    font-family: inherit; /* Use the same font as the rest of the page */
 }
 
 /* Grid System For Pages */
@@ -83,134 +76,61 @@ header button {
 .breaking-news { grid-area: b-news; }
 footer {grid-area: footer}
 .topnav { grid-area: nav; }
-.grid-container{
-    grid-template-areas:
-    'header header header header header header'
-    'b-news b-news b-news b-news b-news b-news'
-    'nav nav nav nav nav nav'
-    'f-article f-article f-article f-article f-article ads'
-    'p-articles p-articles s-media s-media s-media ads'
-    'l-news l-news l-news l-news l-news donate'
-    'footer footer footer footer footer footer'
-
-;
+.grid-container {
     display: grid;
-
+    grid-template-areas:
+        'header header header header header header'
+        'b-news b-news b-news b-news b-news b-news'
+        'nav nav nav nav nav nav'
+        'f-article f-article f-article f-article f-article ads'
+        'p-articles p-articles s-media s-media s-media ads'
+        'l-news l-news l-news l-news l-news donate'
+        'footer footer footer footer footer footer';
 }
+
 @media (max-width: 768px) {
     .grid-container {
         grid-template-areas:
-            'header'
-            'b-news'
-            'nav'
-            'f-article'
-            'p-articles'
-            's-media'
-            'ads'
-            'l-news'
-            'donate'
-            'footer';
+            'header' 'b-news' 'nav' 'f-article' 'p-articles'
+            's-media' 'ads' 'l-news' 'donate' 'footer';
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
     }
-}
-@media (max-width: 768px) {
     header {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
     }
 }
-.icon{
+
+.icon {
     width: 25px;
 }
-.flex-article{
+
+.flex-article {
     display: flex;
     padding: 25px;
     flex-wrap: wrap;
 }
-.flex-text{
-    padding:25px;
-}
 
 /* Main Layout */
-
-.container {
+.container, main, .advertisement, .featured-article,
+.latest-news, .social-media, .donate, .popular-articles {
     margin: 20px;
-}
-.advertisement{
-
-    background-color: rgb(219, 219, 219);
     padding: 20px;
-    margin: 5px;
+    background-color: rgb(219, 219, 219);
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-
-main {
-    margin-right: 20px;
-}
-.head{
-    display: flex;
-    flex-wrap:wrap;
-}
-
-.featured-article {
-    background-color: rgb(219, 219, 219);
-    padding: 20px;
-    margin: 5px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.featured-article img {
+.featured-article img, .latest-news img, .advertisement img {
     width: 100%;
     height: auto;
-    margin: 10px 0;
     border-radius: 5px;
 }
 
-.featured-article h1 {
+.featured-article h1, .full-article h1 {
     font-size: 30px;
-}
-
-.latest-news {
-    background-color: rgb(219, 219, 219);
-    padding: 20px;
-    margin: 5px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.latest-news article {
-    margin-bottom: 20px;
-}
-
-.latest-news img {
-    width: 100%;
-    height: auto;
-}
-
-
-.social-media{
-    background-color: rgb(219, 219, 219);
-    padding: 20px;
-    margin: 5px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-.donate{  background-color: rgb(219, 219, 219);
-    padding: 20px;
-    margin: 5px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);}
-.popular-articles{
-    background-color: rgb(219, 219, 219);
-    padding: 20px;
-    margin: 5px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
 }
 
 /* Footer */
@@ -220,7 +140,6 @@ footer {
     padding: 20px;
     text-align: center;
 }
-
 footer nav a {
     color: white;
     margin: 0 10px;
@@ -232,166 +151,65 @@ footer nav a:hover {
 }
 
 /* Article Page Styles */
-.article-page {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-}
-
 .full-article {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(219, 219, 219);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
-
 .full-article img {
-
+    width: 100%;
     height: auto;
     margin: 20px 0;
-    border-radius: 5px;
-    justify-content: right;
-
 }
-
-.full-article h1 {
-    font-family: "Urbanist", sans-serif;
-    font-size: 28px;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.full-article .author-info {
-    font-size: 14px;
-    color: #777;
-    margin-bottom: 20px;
-}
-
-.full-article p strong {
-    padding: 10px;
-    font-family: "Bebas Neue", sans-serif;
-}
-
 .full-article p {
     padding: 16px;
     font-family: "Gupter", serif;
-    font-weight: 400;
     font-size: 20px;
 }
-.article-image{
-    width: 35%;
 
-}
-
-.related-articles {
-    background-color: rgb(219, 219, 219);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.related-articles h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-.related-articles ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.related-articles ul li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.related-articles ul li a {
-    text-decoration: none;
-    color: #333;
-    display: flex;
-    align-items: center;
-}
-
-.related-articles ul li img {
-    width: 80px;
-    height: auto;
-    margin-right: 15px;
-    border-radius: 5px;
-}
-
-.related-articles ul li h3 {
-    font-size: 18px;
-    margin: 0;
-    color: #444;
-}
-
-.related-articles ul li p {
-    font-size: 14px;
-    color: #555;
-}
-
+/* Top Navigation */
 .topnav {
     overflow: hidden;
     background-color: #333;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
-
 .topnav a {
     color: #f2f2f2;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     flex: 1;
     text-align: center;
 }
-
-.topnav a:hover {
+.topnav a:hover, .topnav a.active {
     background-color: #ddd;
     color: black;
 }
-
-.topnav a.active {
-    background-color: #ddd;
-    color: black;
-}
-
 .topnav .icon {
     display: none;
     font-size: 24px;
     cursor: pointer;
 }
-
 @media screen and (max-width: 600px) {
     .topnav {
         flex-wrap: wrap;
     }
-
     .topnav a {
         display: none;
         flex-basis: 100%;
     }
-
     .topnav a.icon {
         display: block;
         flex-basis: 100%;
     }
-
     .topnav.responsive a {
         display: block;
         text-align: left;
     }
 }
-.advertisement  img {
 
-}
+/* Borders */
+hr.dashed {border-top: 3px dashed #bbb;}
+hr.dotted {border-top: 3px dotted #bbb;}
+hr.solid {border-top: 3px solid #bbb;}
+hr.rounded {border-top: 8px solid #bbb;border-radius: 5px;}
