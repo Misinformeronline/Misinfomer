@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Page - MIS Informer</title>
+    <link rel="stylesheet" href="../res/styles/styles.css">
+</head>
+
+<body>
+<!-- Header Section -->
+<header>
+    <div class="logo">
+        <div style="font-size: 40px;">The MIS Informer</div>
+        Media, Information, Security
+    </div>
+    <div class="search-login">
+        <label>
+            <input type="text" placeholder="Search...">
+        </label>
+        <button>Search</button>
+        <button>Login/Signup</button>
+    </div>
+</header>
+
+<!-- Breaking News Section -->
+<div class="breaking-news">
+    <iframe src="./ticker.html"
+            onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+</div>
+
+<!-- Responsive Navigation Menu -->
+<nav class="topnav" id="myTopnav">
+    <a href="../index.html">Home</a>
+    <a href="#">World</a>
+    <a href="#">Politics</a>
+    <a href="#">Business</a>
+    <a href="#">Technology</a>
+    <a href="#">Science</a>
+    <a href="#">Contact Us</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+</nav>
+
+<!-- Article Content Section -->
+<main class="article-page">
+    <article class="full-article">
+        <h1>Astronomers Discover a Second Sun in Our Solar System</h1>
+        <p class="author-info">By <strong>C Sentance</strong> | Published on August 10, 2024</p>
+        <img src="../res/img/2-suns.png" alt="Astronomers observing the second sun" class="article-image">
+        <p>In a groundbreaking discovery, astronomers have revealed the existence of a second sun in our solar system. The celestial body, which had remained undetected until now, was identified using advanced imaging techniques and deep space observations. This finding has sent shockwaves through the scientific community and could potentially redefine our understanding of the cosmos.</p>
+        <p>The newly discovered sun, named Solis B, is smaller and cooler than our familiar sun, Solis A. It is located on the far edge of the Oort Cloud, a region of icy bodies that surround our solar system. Scientists believe that Solis B has been hiding in plain sight, its light too faint to be noticed by conventional telescopes.</p>
+        <p>This discovery opens up new possibilities for research and exploration, as astronomers scramble to understand the implications of having two suns in our solar system. The presence of Solis B may also provide insights into the formation of our solar system and the potential existence of other planets orbiting this newly found star.</p>
+
+        <h2>1. The Discovery of Solis B</h2>
+        <p>The discovery of Solis B was made possible by the latest advancements in space telescopes and imaging technology. A team of international astronomers, led by Dr. Elena Vasquez, conducted a survey of the outer reaches of our solar system. The faint light from Solis B was detected during a routine scan, prompting further investigation that confirmed the presence of a second sun.</p>
+
+        <h2>2. Characteristics of Solis B</h2>
+        <p>Solis B is classified as a red dwarf star, much smaller and cooler than our sun, Solis A. With a surface temperature of around 3,000 degrees Celsius, it emits a dim, reddish light. Its mass is estimated to be about one-tenth of Solis A, making it less likely to have a significant impact on the inner planets of our solar system. However, its gravitational influence could have played a role in the distribution of objects in the Oort Cloud.</p>
+
+        <h2>3. Implications for the Solar System</h2>
+        <p>The existence of a second sun raises numerous questions about the dynamics of our solar system. One of the key areas of interest is how Solis B might affect the orbits of distant objects in the Oort Cloud and beyond. Additionally, astronomers are keen to investigate whether Solis B has any planets or other celestial bodies orbiting it, which could potentially harbor life or unique geological features.</p>
+
+        <h2>4. Future Research and Exploration</h2>
+        <p>The discovery of Solis B has sparked a renewed interest in deep space exploration. Missions are already being planned to send probes to the Oort Cloud to study Solis B up close. Scientists hope to learn more about its composition, magnetic fields, and potential for supporting life. This discovery may also lead to the development of new theories about the formation and evolution of solar systems in the universe.</p>
+
+        <p>The revelation of a second sun in our solar system marks a monumental moment in astronomy. As research continues, Solis B may provide answers to some of the most profound questions about our place in the cosmos and the mysteries that lie beyond our familiar sun.</p>
+
+    </article>
+
+    <!-- Related Articles Section -->
+    <section class="related-articles">
+        <h2>Related Articles</h2>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="related1.jpg" alt="Related Article 1 Thumbnail" class="related-thumbnail">
+                    <p><strong><!-- Related Article 1 Title --></strong></p>
+                    <p><!-- Related Article 1 Description --></p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="related2.jpg" alt="Related Article 2 Thumbnail" class="related-thumbnail">
+                    <p><strong><!-- Related Article 2 Title --></strong></p>
+                    <p><!-- Related Article 2 Description --></p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="related3.jpg" alt="Related Article 3 Thumbnail" class="related-thumbnail">
+                    <p><strong><!-- Related Article 3 Title --></strong></p>
+                    <p><!-- Related Article 3 Description --></p>
+                </a>
+            </li>
+        </ul>
+    </section>
+</main>
+
+<!-- Footer Section -->
+<footer>
+    <p>© 2024 MIS Informer. All rights reserved.</p>
+    <p>Hosting Provided By Yuki-42. Powered by Peach Ice Tea</p>
+    <nav>
+        <a href="../about.html">About Us</a>
+        <a href="../pp.html">Privacy Policy</a>
+        <a href="../tos.html">Terms of Service</a>
+        <a href="#">Contact Us</a>
+    </nav>
+    </footer>
+<script src="../res/javascript/script.js"></script>
+</body>
+
+</html>

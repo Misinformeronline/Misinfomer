@@ -9,127 +9,99 @@
 </head>
 
 <body>
-    <!-- Header Section -->
-    <header class="head">
-        <div class="logo">
-            <div style="font-size: 40px;">The MIS Informer</div>
-            Media, Information, Security
-        </div>
-        <div class="search-login flex-container">
-            <label>
-                <input type="text" placeholder="Search...">
-            </label>
-            <button>Search</button>
-            <button>Login/Signup</button>
-        </div>
-    </header>
+<!-- Header Section -->
+<header>
+    <div class="logo">
+        <div style="font-size: 40px;">The MIS Informer</div>
+        Media, Information, Security
+    </div>
+    <div class="search-login">
+        <label>
+            <input type="text" placeholder="Search...">
+        </label>
+        <button>Search</button>
+        <button>Login/Signup</button>
+    </div>
+</header>
 
-    <!-- Breaking News Ticker -->
-    <div class="breaking-news">
-        <iframe src="../ticker.html"
+<!-- Breaking News Section -->
+<div class="breaking-news">
+    <iframe src="../ticker.html"
             onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
-    </div>
+</div>
 
-    <!-- Navigation Menu -->
-    <nav class="topnav" id="myTopnav">
-        <a href="../index.html">Home</a>
-        <a href="../world.html">World</a>
-        <a href="../Politics.html">Politics</a>
-        <a href="../buisness.html">Business</a>
-        <a href="../technology.html">Technology</a>
-        <a href="../science.html">Science</a>
+<!-- Responsive Navigation Menu -->
+<nav class="topnav" id="myTopnav">
+    <a href="../index.html">Home</a>
+    <a href="#">World</a>
+    <a href="#">Politics</a>
+    <a href="#">Business</a>
+    <a href="#">Technology</a>
+    <a href="#">Science</a>
+    <a href="#">Contact Us</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+</nav>
+
+<!-- Article Content Section -->
+<main class="article-page">
+    <article class="full-article">
+        <h1>Free Soap Movement: Imprisonment of Soap</h1>
+        <hr class="solid">
+        <p class="author-info">By <strong>Cameron Sentance</strong> | Published on 8/10/2024</p>
+        <img class="article-image" src="path_to_image.jpg" alt="Soap in Prison">
+        <hr class="solid">
+        <h2>Overview of the Free Soap Movement</h2>
+        <p>
+            The article delves into the Free Soap Movement, centered around the imprisonment of a media figure known only as Soap. Soap, a symbol of free speech, was arrested after criticizing sensitive policies, facing charges believed to be politically motivated. His case has drawn significant attention due to concerns about censorship and governmental overreach.
+            Following his arrest, Soap was reportedly seen at a train station exhibiting a fear of stair escalators, sparking speculation about his mental state. The article also explores allegations that Soap may be held in a CIA or FBI blacksite, raising human rights concerns.
+            The situation escalated with a devastating bombing in Soaptopia by radical anti-Soapists, resulting in significant casualties and destruction. This attack was widely condemned as an act of terrorism and highlighted the intense global reaction to Soap’s plight.
+            The article discusses the ongoing efforts to secure Soap’s release, the global response to the bombing, and the impact on society, including a surge in activism for free speech. As of September 8, 2024, Soap remains imprisoned, with continued efforts by supporters to address the situation and advocate for human rights.
+        </p>
+        <hr class="solid">
+        <h2>Soap: A Symbol of Free Speech</h2>
+        <p>
+            Soap (real name undisclosed) is a private citizen who became a symbol of free speech after being imprisoned for speaking his mind and facing censorship. His case has garnered significant attention from human rights organizations, activists, and the general public, highlighting concerns about freedom of expression and governmental overreach.
+        </p>
+    </article>
+
+    <!-- Related Articles Section -->
+    <section class="related-articles">
+        <h2>Related Articles</h2>
+        <div class="flex-RA">
+            <a href="#">
+                <img src="related1.jpg" alt="Related Article 1 Thumbnail">
+                <p><strong>10 Reasons Taylor Swift is a Terrible Musician</strong>
+                <br>A controversial take on one of the most popular artists.</p>
+            </a>
+
+            <a href="#">
+                <img src="related2.jpg" alt="Related Article 2 Thumbnail">
+                <p><strong>The Famous/Infamous Political Figure: Soap</strong>
+                <br>Exploring the rise of Soap as a political figure and media symbol.</p>
+            </a>
+
+            <a href="#">
+                <img src="related3.jpg" alt="Related Article 3 Thumbnail">
+                <p><strong>The Biggest Piece of Evidence that the Moon Landing Was Real</strong>
+                <br>A look into the most compelling proof of the moon landing.</p>
+            </a>
+     </div>
+    </section>
+</main>
+
+<!-- Footer Section -->
+<footer>
+    <p>© 2024 MIS Informer. All rights reserved.</p>
+    <p>Hosting Provided By Yuki-42. Powered by Peach Ice Tea</p>
+    <nav>
+        <a href="abtus.html">About Us</a>
+        <a href="pp.html">Privacy Policy</a>
+        <a href="tos.html">Terms of Service</a>
         <a href="#">Contact Us</a>
-        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
     </nav>
+</footer>
 
-    <!-- Main Content Section -->
-    <div class="container grid-container">
-        <main>
-            <section class="content featured-article">
-                <h1>Free Soap Movement: Imprisonment of Soap</h1>
-                <p class="author-info">By <strong>Cameron Sentance</strong> | Published on August 10, 2024</p>
-                <img class="article-image" src="path_to_image.jpg" alt="Soap in Prison">
-                <h2>Overview of the Free Soap Movement</h2>
-                <p>
-                    The article delves into the Free Soap Movement, centered around the imprisonment of a media figure
-                    known only as Soap. Soap, a symbol of free speech, was arrested after criticizing sensitive
-                    policies, facing charges believed to be politically motivated. His case has drawn significant
-                    attention due to concerns about censorship and governmental overreach.
-                </p>
-                <p>
-                    Following his arrest, Soap was reportedly seen at a train station exhibiting a fear of stair
-                    escalators, sparking speculation about his mental state. The article also explores allegations that
-                    Soap may be held in a CIA or FBI blacksite, raising human rights concerns.
-                </p>
-                <p>
-                    The situation escalated with a devastating bombing in Soaptopia by radical anti-Soapists, resulting
-                    in significant casualties and destruction. This attack was widely condemned as an act of terrorism
-                    and highlighted the intense global reaction to Soap’s plight.
-                </p>
-                <p>
-                    The article discusses the ongoing efforts to secure Soap’s release, the global response to the
-                    bombing, and the impact on society, including a surge in activism for free speech. As of September
-                    8, 2024, Soap remains imprisoned, with continued efforts by supporters to address the situation and
-                    advocate for human rights.
-                </p>
-
-                <h2>Soap: A Symbol of Free Speech</h2>
-                <p>
-                    Soap (real name undisclosed) is a private citizen who became a symbol of free speech after being
-                    imprisoned for speaking his mind and facing censorship. His case has garnered significant attention
-                    from human rights organizations, activists, and the general public, highlighting concerns about
-                    freedom of expression and governmental overreach.
-                </p>
-            </section>
-
-        </main>
-
-        <aside>
-            <section class="popular-articles">
-                <h2>Popular Articles</h2>
-                <article>
-                    <h3>10 reasons Taylor Swift is a terrible musician</h3>
-                </article>
-                <article>
-                    <h3>The famous/infamous political figure: Soap</h3>
-                </article>
-                <article>
-                    <h3>The biggest piece of evidence that the moon landing was real</h3>
-                </article>
-            </section>
-
-            <section class="social-media">
-                <h2>Follow Us</h2>
-                <button class="button"><a href="#">Facebook</a></button>
-                <button class="button"><a href="#">Twitter</a></button>
-                <button class="button"><a href="#">Truth Social</a></button>
-            </section>
-
-            <section class="donate">
-                <h2>Donate to Us</h2>
-                <button class="button"><a href="donate.html">LTC address</a></button>
-            </section>
-
-            <section class="advertisement">
-                <h2>Advertisement</h2>
-                <img src="res/img/ad.png" alt="Ad Banner">
-            </section>
-        </aside>
-    </div>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>© 2024 MIS Informer. All rights reserved.</p>
-        <p>Hosting Provided By Yuki-42. Powered by Peach Ice Tea</p>
-        <nav>
-            <a href="../about.html">About Us</a>
-            <a href="../pp.html">Privacy Policy</a>
-            <a href="../tos.html">Terms of Service</a>
-            <a href="#">Contact Us</a>
-        </nav>
-    </footer>
-
-    <script src="../res/javascript/script.js"></script>
+<script src="../res/javascript/script.js"></script>
 </body>
 
 </html>
