@@ -65,6 +65,12 @@ header button {
     border: none;
 }
 
+.social-media iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+    background-color: none;
+}
 /* Grid System For Pages */
 .head{grid-area:header;}
 .featured-article { grid-area:f-article; }
