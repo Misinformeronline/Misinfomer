@@ -1,0 +1,21 @@
+.breaking-news {
+    background-color: #e74c3c;
+    color: white;
+    text-align: center;
+    height: 100%;
+
+}
+
+.breaking-news iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 20px;
+    /* Apply Urbanist font to the entire page */
+    margin: 0;
+    padding: 0;
+}
